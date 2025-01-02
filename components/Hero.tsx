@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const phrases = ["<Desarrollador Frontend/>"];
@@ -70,14 +70,14 @@ export default function Hero() {
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <Button size="lg" asChild>
-            <a href="#proyectos" className="group">
+            <a href="#landing-pages" className="group">
               Ver mis proyectos
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </Button>
-          <Button variant="outline" size="lg">
+          {/* <Button variant="outline" size="lg">
             Descargar CV
-          </Button>
+          </Button> */}
         </motion.div>
       </motion.div>
       <motion.div
@@ -86,7 +86,7 @@ export default function Hero() {
         transition={{ duration: 0.5 }}
         className="relative"
       >
-        <div className="w-72 h-72 md:w-96 md:h-96 relative">
+        {/* <div className="w-72 h-72 md:w-96 md:h-96 relative">
           <Image
             src="/placeholder.svg"
             alt="Tu Nombre"
@@ -95,7 +95,7 @@ export default function Hero() {
             className="rounded-full shadow-2xl"
           />
           <div className="absolute inset-0 rounded-full border-4 border-primary opacity-75"></div>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );
